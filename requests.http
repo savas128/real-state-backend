@@ -1,0 +1,32 @@
+
+http://localhost:3000/apartments/
+
+###
+
+http://localhost:3000/users/
+
+###
+
+			<Form.Group controlId="formBasicEmail">
+				<Form.Label>Email address</Form.Label>
+				<Form.Control
+					type="text"
+					placeholder="Enter email"
+					name="email"
+					{...formik.getFieldProps("email")}
+				/>
+				<ErrorMessage name="email" />
+			</Form.Group>
+			<Form.Group controlId="formBasicPassword">
+				<Form.Label>Password</Form.Label>
+				<Form.Control
+					type="text"
+					placeholder="Password"
+					name="password"
+					{...formik.getFieldProps("password")}
+				/>
+				<ErrorMessage name="password" />
+			</Form.Group>
+			<Button variant="primary" type="submit">
+				Submit
+			</Button>
